@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".user_show_all_products">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_width="380dp"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="360dp"
+           android:layout_height="360dp"
+           android:backgroundTint="#DEEFEA"
+           app:cardElevation="0dp"
+           app:cardCornerRadius="10dp"
+           app:cardUseCompatPadding="true">
+
+           <ImageView
+               android:id="@+id/usr_prod_img"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+           </ImageView>
+
+       </androidx.cardview.widget.CardView>
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="360dp"
+           android:layout_height="300dp"
+           android:backgroundTint="#DEEFEA"
+           app:cardElevation="0dp"
+           app:cardCornerRadius="10dp"
+           app:cardUseCompatPadding="true">
+
+           <TextView
+               android:id="@+id/prod_name_id"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Name: "
+               android:layout_marginTop="10dp"
+               android:layout_marginLeft="30dp">
+
+           </TextView>
+           <TextView
+               android:id="@+id/prod_price_id"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:text="Price: "
+               android:layout_marginTop="60dp"
+               android:layout_marginLeft="30dp">
+
+           </TextView>
+           <Button
+               android:id="@+id/place_order_btn"
+               android:layout_width="150dp"
+               android:layout_height="50dp"
+               android:text="Order"
+               android:layout_marginTop="100dp"
+               android:layout_marginLeft="30dp">
+
+           </Button>
+
+
+       </androidx.cardview.widget.CardView>
+
+
+   </LinearLayout>
+
+</FrameLayout>
